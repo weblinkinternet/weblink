@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo-box">
+    <img src="./assets/logo.svg" class="logo">
+    <span class="logo-text">Dashboard</span>
+  </div>
+
+  <nav>
+    <button onclick="openSettings()" class="btn">⚙️</button>
+  </nav>
+</header>
+
+<div id="settingsPanel" class="settings hidden">
+  <h2>Cài đặt</h2>
+  <label>Dark <input type="checkbox" id="darkModeToggle"></label>
+  <br><br>
+  <button onclick="saveSettings()" class="btn">Lưu</button>
+</div>
+
+<section>
+  <h2>📘 Bài học</h2>
+  <div id="lessons" class="grid"></div>
+</section>
+
+<section>
+  <h2>🧠 Quiz</h2>
+  <div id="timer"></div>
+  <h3 id="question"></h3>
+  <div id="answers"></div>
+</section>
+
+<script src="./js/settings.js"></script>
+<script src="./js/lessons.js"></script>
+<script src="./js/quiz.js"></script>
+
+</body>
+</html>
